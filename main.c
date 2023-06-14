@@ -44,7 +44,7 @@ void rehberiyazdır(struct kişi *rehber){
     }
 }
 void kaydet(struct kişi *rehber){
-    FILE *dosya=fopen("/Users/jiyanatalay/Desktop/belgeler/yeni.txt","w");
+    FILE *dosya=fopen("yeni.txt","w");
     
     int s;
     for(s=0;s<50;s++){
@@ -57,7 +57,7 @@ void kaydet(struct kişi *rehber){
 }
 
 void rehhberoku(struct kişi *rehber){
-    FILE *dosya=fopen("/Users/jiyanatalay/Desktop/belgeler/yeni.txt","r");
+    FILE *dosya=fopen("yeni.txt","r");
     if(dosya== NULL)
         return;
     int s;
